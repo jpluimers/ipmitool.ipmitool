@@ -31,7 +31,7 @@ purpose tool that lots of people found useful.  I decided to release it
 under a BSD license and give others the chance to make use of it.
 
 ipmitool was not written to provide large-scale (aka Enterprise) management
-application functionality.  The functionality that ipmitool proivides is
+application functionality.  The functionality that ipmitool provides is
 easily accomplished by sending simple IPMI request messages and parsing
 the returned response.  It is intended to be used by system administrators
 who like the simplicity and scriptability of command-line utilities, as
@@ -203,7 +203,7 @@ However, trying to dual bridge commands locally with :
  ipmitool -B 0 -T 0x9a -m 0x94 -t 0x7a -b 7 mc selftest didn't work 
  (it returned the same data as  ipmitool -m 0x20 -t 0x7a -b 7 mc selftest )
  
-The reason was that the "openipmi" interface pluging didn't 
+The reason was that the "openipmi" interface plugin didn't 
 encapsulate/decapsulate the message and didn't even detect the intent
 to double bridge the request.
 
